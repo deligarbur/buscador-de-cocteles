@@ -1,10 +1,8 @@
-![Adalab](https://github.com/Adalab/modulo-2-evaluacion-final-deligarbur/blob/main/public/images/logo-adalab.png)
+# Buscador de Cocteles 🍹🔎
 
-**Dirección GitHub Pages:**
+![Screenshots](https://github.com/Adalab/modulo-2-evaluacion-final-deligarbur/blob/main/public/images/Preview.png)
 
-http://beta.adalab.es/modulo-2-evaluacion-final-deligarbur/
-
-# Módulo 2: Ejercicio de evaluación final
+Este proyecto es una aplicación web desarrollada con HTML5, CSS3, SASS y JavaScript que te permite explorar y guardar tus cócteles favoritos de todo el mundo, utilizando la API abierta de [TheCocktailDB](https://www.thecocktaildb.com/).
 
 ## Estructura básica de carpetas
 
@@ -27,46 +25,50 @@ src
 
 ```
 
-## Enunciado
-
-El ejercicio consiste en desarrollar una aplicación web que contiene un listado de las bebidas y cócteles de todo el mundo, que nos permite des-marcar/marcar las bebidas como favoritas y guardarlas en local storage. El ejercicio también tiene una parte de maquetación con HTML y Sass.
-
-Vamos de definir los distintos hitos completados del ejercicio:
-
 ### 1. Funcionalidad básica
 
-La aplicación de búsqueda de cócteles consta de dos partes:
-
-1. Un campo de texto, un botón para buscar un cóctel por su título y un botón reset para limpiar el campo de búsqueda y resultados actuales.
-1. Un listado de resultados de búsqueda donde aparece la imagen del cóctel y el nombre, y el listado de favoritos.
+- Campo de texto y botón de búsqueda de cócteles.
+- Botón de reset para limpiar búsqueda y resultados.
+- Listado de resultados de búsqueda y de cócteles favoritos.
 
 ### 2. Búsqueda
 
-- Al hacer clic sobre el botón de Buscar, la aplicación se conecta al API abierto de [TheCocktailDB](https://www.thecocktaildb.com/) y precarga la lista de búsqueda por defecto de la palabra "margarita".
-- Para construir la URL de búsqueda se recoge el texto que ha introducido la usuaria en el campo de búsqueda.
-- Por cada cóctel contenido en el resultado de la búsqueda se pinta una tarjeta que muestra la imagen del cóctel y el nombre.
-- Algunas de los cócteles que devuelve el API no tienen imagen y en ese caso se hace una validación paa mostrar una imagen de relleno.
-- Para pintar la información en la página se ha utilizado el método mediante innerHTML.
+- Conexión al API abierto de TheCocktailDB.
+- Pre-carga de resultados de búsqueda por defecto.
+- Pintado de tarjetas con imagen y nombre del cóctel.
+- Validación para mostrar imagen de relleno en caso de falta de imagen.
 
 ### 3. Favoritos
 
-Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son sus cócteles favoritos haciendo click sobre una cóctel de manera que se cumplen las siguientes premisas:
-
-- El color de fondo y el de fuente se intercambian, indicando que es un cóctel favorito.
-- Se muestra el listado de los cócteles favoritos en la parte izquierda de la pantalla, debajo del formulario de búsqueda.
-- Los cócteles favoritos siguen apareciendo a la izquierda aunque la usuaria realice otra búsqueda o se recargue la página de nuevo.
+- Funcionalidad para marcar cócteles favoritos.
+- Listado de cócteles favoritos en pantalla.
+- Persistencia de cócteles favoritos al recargar la página.
 
 ### 4. Almacenamiento local
 
-Se almacena el listado de favoritos en el localStorage. De esta forma, al recargar la página el listado de favoritos seguirá mostrándose.
+- Listado de favoritos almacenado en localStorage.
 
 ### 5. Borrar favoritos
 
-- Al hacer clic sobre el icono de una 'x' al lado de cada favorito, se borra el favorito seleccionado de la lista de favoritos y del localStorage.
-- Se pueden añadir/quitar como favorito al hacer click sobre un cóctel del lado de la derecha (lista de resultados de búsqueda).
-- Si realizamos una nueva búsqueda y sale un cóctel que ya es favorito, aparezca resaltado en los resultados de búsqueda (con colores de fondo y texto intercambiados).
-- Al final de la lista de favoritos hay un botón para borrar todos los favoritos a la vez.
+- Funcionalidad para borrar cócteles favoritos individualmente.
+- Añadir/quitar como favorito al hacer clic en un cóctel.
+- Resaltado de cócteles favoritos en resultados de búsqueda.
+- Botón para borrar todos los favoritos a la vez.
 
-### 6. Afinar la maquetación
+## Instrucciones y uso
 
-![Screenshots](https://github.com/Adalab/modulo-2-evaluacion-final-deligarbur/blob/main/public/images/Preview.png)
+Para utilizar la aplicación, sigue estos pasos:
+
+1. Clona o descarga el repositorio.
+2. Abre una terminal y navega hasta la carpeta del proyecto.
+3. Ejecuta npm install para instalar las dependencias.
+4. Una vez instaladas las dependencias, ejecuta npm run dev.
+5. Abre tu navegador web y dirígete a http://localhost:tu-host-local.
+6. Utiliza el campo de búsqueda para buscar cócteles.
+7. Marca tus cócteles favoritos y guárdalos en la lista de favoritos.
+8. Disfruta explorando y gestionando tus cócteles favoritos! 🌟
+
+
+¡Espero que disfrutes de esta experiencia con cócteles de todo el mundo! 🍹🌎
+
+
